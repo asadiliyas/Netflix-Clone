@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assests/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+nav img {
+    color: red;
+    width: 317px;
+    position: relative;
+    z-index: 10;
+    top: 21px;
+    left: -185px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    font-size: 35px;
+}
+
+.hero {
+    font-family: "Poppins", sans-serif;
+    height: calc(100% - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1) {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 49px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(54, 53, 53);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 4px 36px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 11px;
+    position: relative;
+    top: 13px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 39px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 35px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(249, 249, 249, 0.5);
+    position: relative;
+    top: 14px;
+    margin: 10px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-height: 85vh;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg {
+    position: relative;
+
+}
+
+.secImg img {
+    width: 921px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    height: 1115px;
+    width: 704px;
+    top: -185px;
+    right: 95px;
+
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+
+}
+
+.first>div :nth-child(1) {
+    font-size: 82px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 38px;
+}
+
+.saif video {
+    position: absolute;
+    height: 778px;
+    width: 577px;
+    top: -134px;
+    right: 176px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 81px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 0.5s ease-out;
+    font-size: 43px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer .questions {
+    padding: 34px 0;
+    font-size: 31px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding-bottom: 200px;
+}
+
+@media screen and (max-width:1700px) {
+
+   
+
+    nav {
+        max-width: 96vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav img {
+        width: 170px;
+        position: relative;
+        top: 15px;
+        left: 5px;
+    }
+
+    .btn {
+        padding: 4px 16px;
+        margin: 5px;
+        position: relative;
+        top: 11px;
+        left: 4px;
+    }
+    .btn-red {
+        padding: 3px 24px;
+        font-size: 23px;
+        
+    }
+
+    nav button {
+        position: relative;
+        z-index: 10;
+        font-size: 11px;
+    }
+
+    .main input{
+        font-size: 19px;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+    .first>div :nth-child(1) {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 22px;
+        padding: 17px;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 221px;
+        position: relative;
+        top: -675px;
+        right: -42px;
+    }
+
+    .saif video {
+        width: 193px;
+        position: relative;
+        top: -542px;
+        right: -57px;
+
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .faqbox {
+        font-size: 20px;
+        padding: 9px;
+        max-width: 72vw;
+        margin: 34px auto;
+        cursor: pointer;
+    }
+
+    footer {
+        max-width: 90vw;
+        font-size: 20px;
+    }
+
+    footer .questions {
+        font-size: 19px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+    .footer-item {
+        align-items: center;
+    }
+
+    .footer a {
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1700px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    
+    
+}
+
+.footer a {
+    font-size: 25px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
